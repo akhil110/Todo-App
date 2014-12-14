@@ -62,7 +62,7 @@ angular.module('todo', ['ionic','todo.services'])
   };
   
   $scope.moveItem = function(item, fromIndex, toIndex) {
-    $scope.items.splice(fromIndex, 1);
+    $scope.items.splice(fromIndex - 1, 1);
     $scope.items.splice(toIndex, 0, item);
   };
   
